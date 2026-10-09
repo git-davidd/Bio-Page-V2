@@ -11,7 +11,6 @@
 }
 
 .main-container {
-    height: 90%;
     width: 900px;
     margin: auto;
 }
@@ -19,7 +18,6 @@
 .page-title {
     height: 90px;
     width: 900px;
-    --padding-left: 30px;
 }
 
 .page-title p {
@@ -40,10 +38,11 @@
 }
 
 .info-container {
-    background-color: #11111160;
+    background-color: #ffffff10;
     backdrop-filter: blur(25px);
-    border-radius: 12px;
+    border-radius: 20px;
     padding: 30px;
+    border: solid 1px #ffffff20;
 }
 
 .info-container p {
@@ -53,7 +52,7 @@
 }
 
 .info-title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 550;
     margin-bottom: 4px !important;
 }
@@ -61,6 +60,24 @@
 .info-body {
     font-size: 20px;
     margin-bottom: 20px !important;
+}
+
+.info-list {
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f9f9f9;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.info-buttons {
+    background-color: #ffffff30;
+}
+
+.info-buttons a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #f9f9f9;
+    font-size: 20px;
 }
 
 .center {
