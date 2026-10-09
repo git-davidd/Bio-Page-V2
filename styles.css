@@ -43,6 +43,7 @@
     border-radius: 20px;
     padding: 30px;
     border: solid 1px #ffffff20;
+    height: 180px;
 }
 
 .info-container p {
@@ -71,13 +72,31 @@
 }
 
 .info-buttons {
-    background-color: #ffffff30;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111111;
+    font-size: 20px;
+
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-bottom: 10px;
+
+    background-color: #ffffff;
+    border-radius: 8px;
+    border: solid 1px #ffffff40;
+
+    display: block;
+    width: fit-content;
 }
 
-.info-buttons a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #f9f9f9;
-    font-size: 20px;
+.vert-divider {
+    height: 108px;
+    width: 2px;
+    background-color: #f9f9f9;
+
+    margin-top: 36px;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .center {
