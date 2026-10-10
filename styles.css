@@ -1,3 +1,7 @@
+body {
+  background-color: #111111;
+}
+
 .background {
   background-image: url("assets/background.jpg");
   background-repeat: no-repeat;
@@ -11,13 +15,21 @@
 }
 
 .main-container {
-  width: 900px;
-  margin: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  scale: 0;
+  transition: scale 0.8s;
+}
+
+.main-container.loaded {
+  scale: 1.2;
 }
 
 .page-title {
   height: 90px;
-  width: 900px;
+  width: 712px !important;
 }
 
 .page-title p {
@@ -26,8 +38,8 @@
   color: #f9f9f9;
   font-size: 62px;
   margin: 0px;
-  width: 600px !important;
   margin-left: 20px;
+  margin-right: 120px;
   float: left;
 }
 
@@ -44,6 +56,7 @@
   padding: 30px;
   border: solid 1px #ffffff20;
   height: 180px;
+  width: 652px !important;
 }
 
 .info-container p {
@@ -75,6 +88,7 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #111111;
   font-size: 20px;
+  text-decoration: none;
 
   padding: 5px;
   padding-left: 8px;
@@ -83,10 +97,18 @@
 
   background-color: #ffffff;
   border-radius: 8px;
-  border: solid 1px #ffffff40;
 
   display: block;
   width: fit-content;
+  scale: 1;
+  transition: scale 0.5s;
+}
+
+.info-buttons:hover {
+  color: #f9f9f9;
+  background-color: #111111;
+  scale: 1.1;
+  transition: scale 0.5s;
 }
 
 .vert-divider {
@@ -95,8 +117,8 @@
   background-color: #f9f9f9;
 
   margin-top: 36px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 76px;
+  margin-right: 76px;
 }
 
 .center {

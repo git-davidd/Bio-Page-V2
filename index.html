@@ -1,15 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="background">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About me</title>
     <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/30518f7d15.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
-  <body>
-    <div class="background">
-      <div class="main-container center">
+  <body
+    onload="document.querySelector('.main-container').classList.add('loaded')"
+  >
+    <div>
+      <div class="main-container">
         <div class="page-title">
           <img
             src="assets/profile-picture.webp"
@@ -31,24 +37,24 @@
           </div>
           <div class="vert-divider" style="float: left"></div>
           <div style="float: left">
-            <p class="info-title">Buttons:</p>
+            <p class="info-title">Socials:</p>
             <a
               href="https://github.com/git-davidd/"
               target="_blank"
               class="info-buttons"
-              >GitHub</a
+              ><i class="fa-brands fa-github"></i> GitHub</a
             >
             <a
               href="https://hackati.me/hackatime-davidd"
               target="_blank"
               class="info-buttons"
-              >Hackatime</a
+              ><i class="fa-solid fa-file-code"></i> Hackatime</a
             >
             <a
               href="mailto:biopagemail.detergent257@passmail.net"
               target="_blank"
               class="info-buttons"
-              >Email</a
+              ><i class="fa-solid fa-envelope"></i> Email</a
             >
           </div>
           <br style="clear: both" />
