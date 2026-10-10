@@ -15,6 +15,8 @@ body {
 }
 
 .main-container {
+  width: 719.4px;
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -29,7 +31,7 @@ body {
 
 .page-title {
   height: 90px;
-  width: 712px !important;
+  width: fit-content !important;
 }
 
 .page-title p {
